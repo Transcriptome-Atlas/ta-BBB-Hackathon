@@ -1,0 +1,13 @@
+name: ta
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - jupyter
+  - pip
+  - pip:
+      - llama-index
+      - vllm
+      - llama-index-llms-openai-like
+      - llama-index-readers-file
+      - llama-index-embeddings-huggingface
