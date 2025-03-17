@@ -3,17 +3,24 @@
 
 ## Installation
 
-### Install conda
+### 1. Install conda
 
-Install miniforge.
+Install [miniforge](https://github.com/conda-forge/miniforge)
 
-### Install the environment
+```
+curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+```
 
-`
+### 2. Install the environment
+
+Install the `ta` conda environment
+
+```
 conda env create -f environment.yaml
 conda activate ta
-`
+```
 
-### Jupyter Notebook
+### 3. Run jupyter notebook
 
-Try running a query using the jupyter notebook `QueryLLM.ipynb`.
+Try running a query using the jupyter [notebook](QueryLLM.ipynb) (`QueryLLM.ipynb`)
